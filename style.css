@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: gray;
+}
+
 .container {
     position: absolute;
     top: 50%;
@@ -16,16 +20,19 @@
     font-family: "Poppins", sans-serif;
 
 }
-.container .logo{
+
+.container .logo {
     color: white;
     font-size: 12px;
     position: relative;
     bottom: 10px;
     font-style: italic;
 }
-.logo span{
+
+.container .logo span {
     color: yellow;
 }
+
 .container .display-value-input {
     height: 50px;
     width: 100%;
@@ -36,6 +43,11 @@
     font-size: 24px;
     text-align: right;
     padding: 0 10px;
+}
+
+.container .display-value-input:disabled {
+    background: white;
+    color: black;
 }
 
 .container .inputs-container {
@@ -53,7 +65,7 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    background: rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
     color: white;
     border: 0;
     border-radius: 5px;

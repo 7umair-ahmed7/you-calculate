@@ -2,10 +2,10 @@ let displayValueInput = document.querySelector(".display-value-input")
 let inputsContainer = document.querySelector(".inputs-container")
 
 
- displayValueInput.disabled = true;
+displayValueInput.disabled = true;
 inputsContainer.addEventListener("click", (e) => {
 
-    if (e.target.value == "=" || e.target.value == "AC" || e.target.value == "DE") {
+    if (e.target.value == "=" || e.target.value == "AC" || e.target.value == "DE" || e.target.value == undefined) {
         if (e.target.value == "AC") {
             displayValueInput.value = "";
         }
