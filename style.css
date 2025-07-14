@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+
+}
+.container .logo{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+    font-style: italic;
+}
+.logo span{
+    color: yellow;
+}
+.container .display-value-input {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.container .inputs-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 8px;
+    row-gap: 8px;
+
+}
+
+.container .inputs-container input {
+    width: 60px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: rgb(56, 56, 56);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+.container .inputs-container .equal {
+    width: auto;
+    grid-column: 3 / 5;
+}
